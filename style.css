@@ -1,0 +1,16 @@
+/*
+Theme Name: Planty Vitrine Theme
+Theme URI: https://oceanwp.org/
+Description: Sample child theme of Planty Vitrine.
+Author: Elie Akiki
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+
+#footer-bottom #footer-bottom-menu {
+    text-align: center !important;
+	width: 100% !important;
+	float:none !important;
+}
