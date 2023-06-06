@@ -8,9 +8,12 @@ Template: oceanwp
 Version: 1.0
 */
 
-
 #footer-bottom #footer-bottom-menu {
     text-align: center !important;
 	width: 100% !important;
 	float:none !important;
+}
+#menu-item-14 {
+    background-color: #DC9F96;
+    font-weight: 700; 
 }
