@@ -33,3 +33,29 @@ function oceanwp_child_enqueue_parent_style() {
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
 
+function exclude_admin_menu_item($items, $args)
+{
+    if (is_user_logged_in() && $args->theme_location == 'primary') {
+        foreach ($items as $key => $item) {
+            if ($item->title === 'Admin') {
+                unset($items[$key]);
+            }
+        }
+    }
+	/*  to test unrem the below  */
+	/*foreach ($items as $key => $item) {
+		if ($item->title === 'Admin') {
+			unset($items[$key]);
+		}
+	}*/
+    return $items;
+}
+
+add_filter('wp_nav_menu_objects', 'exclude_admin_menu_item', 10, 2);
+
+
+
+
+
+//add_filter('wp_nav_menu_items', 'add_item_to_main_menu', 10,2);
+
