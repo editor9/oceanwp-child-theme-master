@@ -29,9 +29,7 @@ function oceanwp_child_enqueue_parent_style() {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
 	
 }
-
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
-
 
 function exclude_admin_menu_item($items, $args)
 {
@@ -50,12 +48,12 @@ function exclude_admin_menu_item($items, $args)
 	}*/
     return $items;
 }
-
 add_filter('wp_nav_menu_objects', 'exclude_admin_menu_item', 10, 2);
 
-
-
-
-
-//add_filter('wp_nav_menu_items', 'add_item_to_main_menu', 10,2);
-
+function add_custom_body_class( $classes ) {
+    if ( is_page( 'commander' ) ) {
+        $classes[] = 'commander-page';
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'add_custom_body_class' );
