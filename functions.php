@@ -31,24 +31,16 @@ function oceanwp_child_enqueue_parent_style() {
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
-function exclude_admin_menu_item($items, $args)
+function include_admin_menu_item($items, $args)
 {
-    if (is_user_logged_in() && $args->theme_location == 'primary') {
-        foreach ($items as $key => $item) {
-            if ($item->title === 'Admin') {
-                unset($items[$key]);
-            }
-        }
-    }
-	/*  to test unrem the below  */
-	/*foreach ($items as $key => $item) {
-		if ($item->title === 'Admin') {
-			unset($items[$key]);
-		}
-	}*/
+    if (is_user_logged_in() && $args->theme_location == 'main_menu') {
+        $items.='<li class="menu-item"><a href="'.get_admin_url().'" class="menu-link">Admin</a></li>';
+	
+	}
+	
     return $items;
 }
-add_filter('wp_nav_menu_objects', 'exclude_admin_menu_item', 10, 2);
+add_filter('wp_nav_menu_items', 'include_admin_menu_item', 10, 2);
 
 function add_custom_body_class( $classes ) {
     if ( is_page( 'commander' ) ) {

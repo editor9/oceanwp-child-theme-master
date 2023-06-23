@@ -8,9 +8,12 @@ Template: oceanwp
 Version: 1.0
 */
 
-
+ul#menu-menu.main-menu {
+	display: flex;
+}
 #menu-item-14 {
 	background-color: #DC9F96;
+	order: 3;
 }
 #menu-menu li#menu-item-14 > a.menu-link > .text-wrap {
 	font-family: 'Syne';
@@ -102,6 +105,10 @@ body {
 	padding-top:60px;
 	margin-bottom: 0px;
 }
+figure.wp-block-gallery img {
+	border-radius: 0;
+  }
+  
 .image-gallery-commande {
 	justify-content: center; 
 	align-items: center;
@@ -179,7 +186,7 @@ body {
 	font-size: 30px;
 }
 #backinfliv {
-	background-color: #3D9448 !important;
+	
 	margin-left: 285px;
 	height: 500px !important;
 }
@@ -197,6 +204,7 @@ body {
 }
 #butcomand .wp-element-button {
 	width: 198px !important;
+	background-color: #E0B9B4 !important;
 }
 .wp-block-uagb-separator.linesep {
 	width: 860px !important;
@@ -269,25 +277,40 @@ p {
 	padding-top: 60px;
 	padding-bottom: 28px;
 }
-#noucontacter {
-    background-color: white !important;
+#nous-contacter {
     width: 383px;
-    margin-left: 504px;
-    border-radius: 7px;
+    margin-left: 529px;
+	padding: 0px !important;
+}
+.noucontacter input,
+.noucontacter textarea {
+    background-color: white !important;
+    border-radius: 7px !important;
+}
+.uagb-forms-textarea-input {
+	height: 237px;
+	resize: none;
+} 
+.page-id-661 form.uagb-forms-main-form .uagb-forms-input-label  {
+	background-color: #ECE2DA !important;
+	padding-bottom: 0px;
 	font-family: 'Syne';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
 }
-.imagecorner {
+.page-id-661 form.uagb-forms-main-form .uagb-forms-input  {
+	padding:22px;
+}
+#imagecorner {
 	position: relative;
 }
-.imagecorner textarea {
+#imagecorner textarea {
 	position: relative;
 	z-index: 1;
 }
-.imagecorner::before {
+#imagecorner::before {
 	content: "";
 	background-image: url('http://localhost:81/planty/wp-content/uploads/2023/06/Group-16.png');
 	background-repeat: no-repeat;
@@ -299,44 +322,8 @@ p {
 	left: -90px; 
 	z-index: 0;
 }
-#main #content-wrap {
-	padding-bottom: 0;
-  padding-top:115px !important;
-}
-.page-id-12 #main #content-wrap {
-  padding-top:60px !important;
-}
-.page-id-661 #main #content-wrap {
-	padding-top:100px !important;
-}
-.page-id-661 form.uagb-forms-main-form .uagb-forms-input-label  {
-	background-color: #ECE2DA !important;
-	padding-bottom: 13px;
-	font-family: 'Syne';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-}
-.page-id-661 form.uagb-forms-main-form .uagb-forms-input  {
-	padding:18px;
-}
-.page-id-12 form.uagb-forms-main-form .uagb-forms-input-label  {
-	padding-top: 15px;
-	font-family: 'Syne';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-}
-.page-id-12 form.uagb-forms-main-form .uagb-forms-input  {
-padding:22px;
-}
-.uagb-forms__outer-wrap {
-	padding: 10px !important;
-}
 .uagb-forms-main-submit-button-wrap {
-	margin-left: 590px;
+	margin-left: 88px;
 }
 .page-id-661 form.uagb-forms-main-form {
 	margin-bottom: 195px !important;
@@ -351,6 +338,32 @@ padding:22px;
 	padding-left: 48px;
 	padding-right: 48px;
 }
+#main #content-wrap {
+	padding-bottom: 0;
+  padding-top:115px !important;
+}
+.page-id-12 #main #content-wrap {
+  padding-top:60px !important;
+}
+.page-id-661 #main #content-wrap {
+	padding-top:100px !important;
+}
+
+.page-id-12 form.uagb-forms-main-form .uagb-forms-input-label  {
+	padding-top: 15px;
+	font-family: 'Syne';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+}
+.page-id-12 form.uagb-forms-main-form .uagb-forms-input  {
+padding:22px;
+}
+.uagb-forms__outer-wrap {
+	padding: 10px !important;
+}
+
 .leftimage {
 	padding-left:132px;
 }
