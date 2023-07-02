@@ -35,9 +35,7 @@ function include_admin_menu_item($items, $args)
 {
     if (is_user_logged_in() && $args->theme_location == 'main_menu') {
         $items.='<li class="menu-item"><a href="'.get_admin_url().'" class="menu-link">Admin</a></li>';
-	
 	}
-	
     return $items;
 }
 add_filter('wp_nav_menu_items', 'include_admin_menu_item', 10, 2);
