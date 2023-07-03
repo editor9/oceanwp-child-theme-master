@@ -34,7 +34,7 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 function include_admin_menu_item($items, $args)
 {
     if (is_user_logged_in() && $args->theme_location == 'main_menu') {
-        $items.='<li class="menu-item"><a href="'.get_admin_url().'" class="menu-link">Admin</a></li>';
+        $items.='<li class="menu-item"><a href="'.get_admin_url().'" class="menu-link" style="padding: 0 60px 0 0;">Admin</a></li>';
 	}
     return $items;
 }
