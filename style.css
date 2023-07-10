@@ -359,6 +359,10 @@ figure.wp-block-gallery img {
 	margin-bottom: -13px;
 }
 
+.forminator-required {
+	display: none;
+}
+
 .forminator-ui#forminator-module-1497.forminator-design--default .forminator-input[name="text-1"] {
 	height: 237px;
 	resize: none;
