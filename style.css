@@ -20,6 +20,15 @@ Version: 1.0
   outline: none !important;
 }
 
+.menu-item .menu-link:hover {
+	color: black !important;
+}
+  
+.menu-item .menu-link:focus,
+.menu-item .menu-link:active {
+	outline: none !important;
+}
+  
 ul#menu-menu.main-menu {
 	display: flex;
 }
