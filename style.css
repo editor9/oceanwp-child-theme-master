@@ -15,6 +15,11 @@ Version: 1.0
 	padding-left: 6px;
 }
 
+.custom-logo-link:focus,
+.custom-logo-link:active {
+  outline: none !important;
+}
+
 ul#menu-menu.main-menu {
 	display: flex;
 }
@@ -34,6 +39,7 @@ ul#menu-menu.main-menu {
 #menu-menu li#menu-item-663 > a.menu-link > .text-wrap {
     padding: 44px;
 }
+
 
 /*********************************** General ****************************/
 
@@ -186,6 +192,10 @@ figure.wp-block-gallery img {
   	margin-top: -16px;
 }
 
+.wp-block-button__link:hover {
+  color: white;
+}
+
 .image-over-foot  {
 	background-image: url("data:image/svg+xml,%3Csvg width='1440' height='680' viewBox='0 0 1440 680' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0C0 0 5 10 722.5 26C1440 10 1440 0 1440 0V680H0V0Z' fill='white'/%3E%3C/svg%3E");
 	height: 638px;
@@ -232,6 +242,15 @@ figure.wp-block-gallery img {
 }
 
 /***************************************** Nous rencontrer *****************************/
+
+#menu-item-663 .menu-link .text-wrap:hover {
+  color: black;
+}
+
+#menu-item-663 .menu-link:focus,
+#menu-item-663 .menu-link:active {
+  outline: none !important;
+}
 
 #fleur {
 	position: absolute;
