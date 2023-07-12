@@ -50,6 +50,10 @@ p {
 	padding-bottom: 0;
   	padding-top: 160px !important;
 }
+.cequilsgalery {
+	max-width: 1230px !important;
+	margin: auto !important;	
+}
 
 .wp-block-uagb-image.aligncenter::before,
 .wp-block-uagb-image.aligncenter::after {
@@ -112,8 +116,14 @@ p {
   	padding-bottom: 20px;
 }
 
-#planty,
 #planty2.has-text-align-center {
+	font-family: 'Syne';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.planty {
 	font-family: 'Syne';
 	font-weight: 400;
 	font-size: 20px;
@@ -185,32 +195,23 @@ figure.wp-block-gallery img {
 	background-position: center;	
 }
 
-.leftimage {
-	padding-left: 108px;
-}
-
-#favema {
+.favema {
 	font-family: 'Syne';
 	font-weight: 700;
 	font-size: 30px;
 }
 
-#typo {
+.typo {
 	font-family: 'Syne';
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 19px;
 	color: black;
-	letter-spacing: 0px;
-	width: calc(22vw - 100px);	
-}
-
-.rightimage {
-	padding-right: 118px;
+	letter-spacing: 0px;	
 }
 
 
-/****************************************footer**********************************/
+/**************************************** footer **********************************/
 
 .site-footer::before {
 	content: "";
@@ -252,11 +253,7 @@ figure.wp-block-gallery img {
 	padding-top: 100px !important;
 }
 
-#planty.has-text-align-center {
-	margin-bottom: 5px;
-}
-
-.planty-width {
+P.has-text-align-center.planty {
 	max-width: 680px;
 	margin: -20px auto 0 !important;
 }
@@ -266,6 +263,10 @@ figure.wp-block-gallery img {
 	padding-top: 30vh;
 	padding-bottom: 4vh;
 	position: relative;
+	font-family: Syne;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 700; 
 }
 
 .lequip::before {
@@ -287,30 +288,21 @@ figure.wp-block-gallery img {
 }
 
 #allphotos {
-	display: flex;
-	margin-left: calc(7.3vw + -77px);
-}
-
-.meganleft {
-	margin-right: -105px !important;
-	margin-left: 140px !important;
-}
-
-.sylvieright {
-	margin-right: -239px !important;
-	margin-left: -105px !important;
-}
+	max-width: 1140px;
+	margin-left: 21vw;
+}  
 
 .wp-image-1588 {
 	width: 130px;
-	margin: 110px 0 45px 165px;
+	margin: 110px 0 45px 18px;
 }
 
-#typolequipe {
+.typolequipe {
 	font-family: 'Syne';
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 24px;
+	margin-bottom: 22px;
 }
 
 .page-id-661 #group-5 .forminator-label.forminator-repeater-label {
@@ -420,7 +412,11 @@ figure.wp-block-gallery img {
 .vcommande {
 	padding-bottom: 24px;
 	margin-top: -22px;
-	padding-right:50% ; 
+	padding-right:calc(72vw + -260px); 
+	font-family: Syne;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 700; 
 }
 
 .qt-field[id*="number-"] {
@@ -472,10 +468,11 @@ figure.wp-block-gallery img {
 }
 
 .forminator-ui#forminator-module-1309.forminator-design--default input[id*="number-"] {
-	height: 55.5px !important;
+	height: 56px !important;
 	width: 24%;
-	margin-top: -7.2%;
+	margin-top: -6.9%;
 	border-radius: 5px 0 0 5px !important;
+	appearance: textfield;
 }
 
 div#group-5.forminator-col.vos-info > label.forminator-label,
@@ -577,11 +574,11 @@ hr#vert1 {
     display: none;
 }
 
-/**********************************************@media*******************************************/
+/********************************************** @media *******************************************/
 
 @media (max-width: 786px) and (min-width: 318px) {
 
-	/**********************************Planty******************************/
+	/********************************** Planty ******************************/
 
 	#site-logo  {
 		margin-bottom: -80px !important;
@@ -591,10 +588,12 @@ hr#vert1 {
 		height: 0px !important;
 		display: flex;
 	}
+
 	.has-large-font-size {
 		font-weight: 700 !important;
 		margin-bottom: -16vw;
 	}
+
 	#planty2.has-text-align-center {
 		margin-top: 3vw;
 	}
@@ -607,66 +606,74 @@ hr#vert1 {
 		background-size: calc(23.3vw + 78px);
 		bottom: -135px;
 	}
+
 	.wp-block-uagb-image.aligncenter::before {
 		left: calc(38.3vw - 236px);
 	}
+
 	.wp-block-uagb-image.aligncenter::after {
 		right: calc(38.3vw - 236px);
 	}
+
 	.image-gallery.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
 		font-size: 5vw;
 		line-height: 6vw;
 	}
-	.wp-block-media-text__media img, .wp-block-media-text__media video {
-		width: 11vw;
-		margin-right: 4vw;
+
+	.cequilsgalery {
+		max-width: 320px !important;
+		margin: auto 0 !important;
+		flex-direction: column;
 	}
-	.leftimage {
-		padding-left: 0px !important;	
-	} 	
-	.rightimage {
-		padding-right: 0px !important;		
-	}
-	#typo {
-		width: auto !important;
-	}
+
 	.image-over-foot {
-		height: calc(30vw + 770px) !important; 
+		height: calc(30vw + 876px) !important; 
 	}
 
-/************************************Nous rencontrer**********************/
 
-	#nrencontr {
-		font-weight: 700 !important;
-	}
-	.page-id-661 .but-comand {
-		margin-top: 16vw !important;
-	}
-
-/************************************Commander******************************/
+/************************************ Commander ******************************/
 
 	#pcommander {
 		padding-bottom: 20vw !important;
 	}
-	.vcommande {
-		padding-right: 3vw;
-	}
+
 	.forminator-ui#forminator-module-1309.forminator-design--default input[id*="number-"] {	
 		width: calc(11.3vw + 22px);
 		margin-top: calc(13.3vw + -61px);
+		appearance: textfield;
 	}
+	
 	.plus {
 		margin-top: 13.3vw;
+	
 	}
 	.ok {
 		margin-top: 13vw;
 	}
+
 	hr#vert1 {
 		border: none !important;
 	}
+
 	.but-comand {	
 		right: calc(-26.7vw + 55px);
 		margin-bottom: 0 !important;
 		margin-top: 14vw !important;
 	}
+}
+
+/************************************ Nous rencontrer **********************/
+
+@media (max-width: 810px) and (min-width: 318px) {
+#nrencontr {
+	font-weight: 700 !important;
+}
+
+.page-id-661 .but-comand {
+	margin-top: 16vw !important;
+}
+
+#allphotos {
+	margin: 0   auto;
+}
 }
