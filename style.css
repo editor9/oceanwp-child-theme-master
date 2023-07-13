@@ -75,8 +75,8 @@ p {
 	margin: auto !important;	
 }
 
-.wp-block-uagb-image.aligncenter::before,
-.wp-block-uagb-image.aligncenter::after {
+.canette::before,
+.canette::after {
   	content: "";
   	position: absolute;
   	top: 0;
@@ -86,24 +86,24 @@ p {
   	z-index: -1;
 }
 
-.wp-block-uagb-image.aligncenter {
+.canette {
 	position: relative;
 	z-index: 1;
 }
 
-.wp-block-uagb-image.aligncenter::before {
+.canette::before {
 	left: calc(50% - 372px); 
 	width: 385px; 
 	background-image: url("http://localhost:81/planty/wp-content/uploads/2023/07/Group-4.png");
 }
 
-.wp-block-uagb-image.aligncenter::after {
+.canette::after {
 	right: calc(50% - 364px); 
 	width: 385px; 
 	background-image: url("http://localhost:81/planty/wp-content/uploads/2023/07/Group-3.png");
 }
 
-.wp-block-uagb-image.aligncenter img {
+.canette img {
 	padding-top: 24px;
 }
 
