@@ -40,10 +40,3 @@ function include_admin_menu_item($items, $args)
 }
 add_filter('wp_nav_menu_items', 'include_admin_menu_item', 10, 2);
 
-function add_custom_body_class( $classes ) {
-    if ( is_page( 'commander' ) ) {
-        $classes[] = 'commander-page';
-    }
-    return $classes;
-}
-add_filter( 'body_class', 'add_custom_body_class' );
